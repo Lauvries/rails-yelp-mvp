@@ -1,0 +1,9 @@
+<div class="container" style="width: 600px">
+  <%= simple_form_for @restaurant do |f| %>
+    <%= f.input :name %>
+    <%= f.input :address %>
+    <%= f.input :phone_number %>
+    <%= f.input :category, collection: ["belgian", "italian", "chinese", "french", "japanese"] %>
+    <%= f.button :submit %>
+  <% end %>
+</div>
